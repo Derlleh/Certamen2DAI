@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<title> Noticia Pagina Prueba</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<meta charset="utf-8">
+
+	<script type="text/javascript">
+		     function cerrarven2() {
+			  document.getElementById("vent2").style.display = "none";
+				}
+	 </script>
+
+
+	
+	<style>
+		.centrar
+	{
+		position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+		top:0%;
+		left:27%;
+		/*determinamos una anchura*/
+		width:600px;	
+		
+	}
+
+	</style>
+
+<body style="background-color: white">
+
+	 <div class="formularios1" id="vent2">
+         <button onclick="cerrarven2()"> Puma &times; </button> 
+      </div>
+
+<div class="centrar" id="formularios1">	
+
+				
+				{% for b in noticia1 %}
+
+					<p>{{ b["titulo1"] }}</p>
+					<br>
+
+					<p>{{ b["lead1"] }}</p>
+
+					<br>
+
+					<p>{{ b["cuerpo1"] }}</p>
+
+				{% endfor%}
+				<div class="audio-player">
+
+				<audio width="300" height="32" src="C:\wamp\www\Certamen2\templates\Puma.mp3" controls="controls" autoplay="autoplay" preload="">
+
+			</div>
+				
+			
+			</div>
+			
+		</div>	
+
+
+</body>
+
+</html>

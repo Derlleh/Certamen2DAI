@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+	<title> Noticia Pagina Prueba</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<meta charset="utf-8">
+</style>
+
+<body>
+	
+
+        <div class="formularios">
+             
+
+		
+				 <h2>La otra pagina que quiero mostrar por id </h2>
+
+				<div class="container">
+		<h2>noticias freakkkks</h2>
+		<ul>
+		{% for a in noleida %}
+
+			<h2>{{ a["idNoLeida"] }}</h2>
+
+			<h2>{{ a["tituloNoLeida"] }}</h2>
+
+			<h3>{{ a["LeadNoLeida"] }}</h3>
+
+			<p>{{ a["cuerpoNoLeida"] }}</p>
+
+		{% endfor%}
+		</ul>
+		</div>
+				 <img src="C:\wamp\www\RepoBegnoSlimm-master\templates\fondoradio.jpg" alt="Smiley face" width="42" height="42">
+
+	              </div>
+
+
+</body>
+
+</html>

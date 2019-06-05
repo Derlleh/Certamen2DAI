@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+	<title>Radio VaioVaio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/Utils.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
+
+
+
+
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+
+	<style>
+		.fa-youtube {
+		  background: #bb0000;
+		  color: white;
+		}
+
+		.fa-twitter {
+		  background: #55ACEE;
+		  color: white;
+		}
+
+		.fa-facebook {
+		  background: #3B5998;
+		  color: white;
+		}
+
+		.fa-instagram {
+		  background: #125688;
+		  color: white;
+		}
+	</style>
+
+
+<body background = "C:\wamp\www\Certamen2\templates\logoradio.png">
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="background-color: black; display:none; overflow: hidden;" id="leftMenu">
+	  <button onclick="closeLeftMenu()" class="w3-bar-item w3-button w3-large" id="cerrarLeida" style="color: red"> Leidas &times;</button>
+	   <div id="leidas" class="list-group" style="overflow-y: scroll; height: 90vh;">
+	  <a href="/not4" target="formularios1" style="color: red" class="w3-bar-item w3-button">Exito SNK</a>
+	  <a href="/not5" target="formularios1" style="color: red" class="w3-bar-item w3-button">Choco Vidal</a>
+	</div>
+</div>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-right" style="background-color: black; display:none;right:0;" id="rightMenu">
+	  <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large" id="cerrarxleer" style="color: red">Por Leer &times;</button>
+	  <div id="xleer" class="list-group" style="overflow-y: scroll; height: 90vh;">
+	  <a href="/not1" target="formularios1" style="color: red" class="w3-bar-item w3-button">GTA 6</a>
+	  <a href="/not2" target="formularios1" style="color: red" class="w3-bar-item w3-button">Mujer atacada</a>
+	  <a href="/not3" target="formularios1" style="color: red"class="w3-bar-item w3-button">Chupacabras en conce</a>
+	</div>
+</div>
+
+<div class="w3-teal">
+	  <button class="w3-button w3-teal w3-xlarge w3-left" onclick="openLeftMenu()">&#9776;</button>
+	  <button class="w3-button w3-teal w3-xlarge w3-right" onclick="openRightMenu()">&#9776;</button>
+ <div class="w3-container" style="background-color: black; text-align: center">
+
+ 		<?php
+
+
+
+		?>
+
+ 		<h2> Radio vaio-vaio.cl </h2>
+
+      	
+      			<p>{{ post.published_at|date("m/d/Y", false) }}<p>		
+      			<h3> Nuestras Redes Sociales </h3>
+      		
+      			<a href="#" class="fa fa-facebook"></a>	
+
+      			<a href="#" class="fa fa-twitter"></a>	
+
+      			<a href="#" class="fa fa-instagram"></a>
+
+      			<a href="#" class="fa fa-youtube"></a>	
+	  	    </div>
+      		
+	  	   </div>
+      </div>
+</div>
+
+
+		<div id="page-content-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="nav nav-tabs" role="tablist">
+							</ul>
+							<div id="xleer">
+							<div class="tab-content" style="overflow-y: scroll; height: 80vh;">
+								<iframe src="" style="width: 90%; height: 80%" name="formularios1"></iframe>
+								 </div>	
+
+
+							    <div class="tab-content" style="overflow-y: scroll; height: 80vh;">
+							    	
+								<iframe id="vent2" style="width: 90%; height: 80%" name="formularios2">   </iframe>
+								 </div>	
+
+								  <div class="tab-content" style="overflow-y: scroll; height: 80vh;">
+							    	
+								<iframe id="vent2" style="width: 90%; height: 80%" name="formularios3">   </iframe>
+								 </div>	
+
+								  <div class="tab-content" style="overflow-y: scroll; height: 80vh;">
+							    	
+								<iframe id="vent2" style="width: 90%; height: 80%" name="formularios4">   </iframe>
+								 </div>	
+
+								  <div class="tab-content" style="overflow-y: scroll; height: 80vh;">
+							    	
+								<iframe id="vent2" style="width: 90%; height: 80%" name="formularios5">   </iframe>
+								 </div>	
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+     
+		<script>
+		function openLeftMenu() {
+		  document.getElementById("leftMenu").style.display = "block";
+		}
+
+		function closeLeftMenu() {
+		  document.getElementById("leftMenu").style.display = "none";
+		}
+
+		function openRightMenu() {
+		  document.getElementById("rightMenu").style.display = "block";
+		}
+
+		function closeRightMenu() {
+		  document.getElementById("rightMenu").style.display = "none";
+		}
+
+		function cerrarven2() {
+		  document.getElementById("vent2").style.display = "none";
+		}
+
+
+		function cargarPagina1() {
+
+			var paremetros = {};
+			$.ajax({
+				data: paremetros,
+				url: '/not1',
+				type: 'get',
+				cache: false,
+				success: function(response) {
+				  $("#xleer").html(response);
+				}
+
+			})
+		}
+
+		var button = document.querySelector("button"); 
+		var divContenerdor = document.getElementById("mostrar1");
+
+		function obtenerHTML(e) {
+			var xhr = new XMLHttpRequest(); 
+			xhr.onreadystatechange = function(){
+				if(xhr.status === 200){
+					divContenerdor.innerHTML = xhr.responseText; 
+				}
+			}
+			xhr.open("get", "/not1", true); 
+			xhr.send(); 
+		}
+
+		
+		</script>
+
+
+     
+	</body>
+</html>
+

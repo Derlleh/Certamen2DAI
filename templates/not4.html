@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<title> Noticia Pagina Prueba</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+
+	<meta charset="utf-8">
+
+
+
+	<style>
+		.centrar
+	{
+		position: absolute;
+		/*nos posicionamos en el centro del navegador*/
+		top:0%;
+		left:27%;
+		/*determinamos una anchura*/
+		width:600px;
+		
+		
+		
+	}
+
+	</style>
+
+
+<body style="background-color: white">
+	
+
+       
+     <div class="centrar" id="formularios1">	
+
+				<ul>
+				{% for d in noticia1 %}
+
+					<p>{{ d["titulo1"] }}</p>
+					<br>
+
+					<p>{{ d["lead1"] }}</p>
+					<br>
+					<p>{{ d["cuerpo1"] }}</p>
+
+				{% endfor%}
+				</ul>
+
+
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/AiOPp3hNKTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+		</div>
+
+	     
+</body>
+
+</html>
